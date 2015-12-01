@@ -45,4 +45,27 @@ public class TestRhombus {
 		new Rhombus(-4, 0);
 	}
 	
+	@Test(expected = WrongFormatException.class)
+	public void testVerySmallNegativeNumber() throws WrongFormatException {
+		new Rhombus(-0.00000021, -0.000000003);
+	}
+	
+	@Test(expected = WrongFormatException.class)
+	public void testVeryBigNegativeNumber() throws WrongFormatException {
+		new Rhombus(-23412534524.234132351, -236546546753.51242352345);
+	}
+	
+	@Test
+	public void testVerySmallPositiveNumber() throws WrongFormatException {
+		Rhombus rhombus = new Rhombus(0.00000021, 0.000000003);
+		double perimeter = 4 * 0.00000021;
+		assertTrue(rhombus.colcualtePerimeter() == perimeter);
+	}
+	
+	@Test
+	public void testVeryBigPositiveNumber() throws WrongFormatException {
+		Rhombus rhombus = new Rhombus(23412534524.234132351, 236546546753.51242352345);
+		double square = 23412534524.234132351 * 236546546753.51242352345;
+		assertTrue(rhombus.colcualteSquare() == square);
+	}
 }

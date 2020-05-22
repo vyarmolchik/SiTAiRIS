@@ -1,0 +1,12 @@
+#surefire
+#Tue Nov 24 14:44:09 MSK 2015
+jpda.address=29715
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.0.2\\java\\maven-nblib\\netbeans-eventspy.jar
+file.encoding=UTF-8
+jpda.listen=true
+forkMode=once
+user.dir=F\:\\\u0411\u0413\u0423\u0418\u0420\\3 \u043A\u0443\u0440\u0441\\\u0421\u0438\u0422\\\u043B\u0430\u0431\u0430 8\\111
+localRepository=C\:\\Users\\tbegu_000\\.m2\\repository
+test=begun.TriangleTest
+basedir=F\:\\\u0411\u0413\u0423\u0418\u0420\\3 \u043A\u0443\u0440\u0441\\\u0421\u0438\u0422\\\u043B\u0430\u0431\u0430 8\\111
+maven.surefire.debug=-Xdebug -Xrunjdwp\:transport\=dt_socket,server\=n,address\=29715
